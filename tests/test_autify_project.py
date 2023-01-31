@@ -64,3 +64,6 @@ class TestMain(TestCase):
             with  self.assertRaises(Exception) as context:
                 fetch([url])
                 self.assertTrue("fake exception" in context.exception)
+
+
+    #TODO:add integration tests and missing coverage for code just added not enough time to do it all

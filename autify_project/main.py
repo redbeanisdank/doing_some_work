@@ -83,6 +83,8 @@ def fetch(urls):
             images_count = len(images) if images else 0
             url = URL(link=title)
             url_metadata = URLMetadata(id=url.id, links=links_len, images=images_count)
+            #TODO didnt finish. missing case where more metadata is added for an already created/queryed link ran out of time
+
             session.add(url)
             session.add(url_metadata)
             session.commit()
